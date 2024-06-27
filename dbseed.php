@@ -36,7 +36,7 @@ EOS;
 
 try {
     $createTable = $db -> exec($statement);
-    echo "Success!\n";
+    echo "Succes!\n";
 } catch (\PDOException $e) {
     exit($e->getMessage());
 }
