@@ -15,7 +15,7 @@ class DatabaseConnector
 
         try {
             $this->dbConnection = new \PDO(
-                sprintf("mysql:host=%s;port=%s;dbname=%s;charset=UTF8", $host,$port,$db ),
+                sprintf("mysql:host=$host;port=$port;charset=UTF8;dbname=$db"),
                 $user,
                 $pass
             );
