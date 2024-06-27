@@ -3,6 +3,6 @@
 3. clone the repo, composer install and copy the ``.env.example`` files into the ``.env`` file and edit it as per your credentials and file.
 
 Run this on the terminal after config the ``.env`` file
-``code
-php DBoperation.php 
+```code
+$ php DBoperation.php 
 ```
