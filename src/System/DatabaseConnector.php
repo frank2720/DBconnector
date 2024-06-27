@@ -17,7 +17,8 @@ class DatabaseConnector
             $this->dbConnection = new \PDO(
                 sprintf("mysql:host=%s;port=%s;dbname=%s;charset=utf8mb4",$host,$port,$db),
                 $user,
-                $pass
+                $pass,
+                [\PDO::ATTR_ERRMODE => \PDO::ERRMODE_EXCEPTION]
             );
         } catch (\PDOException $e) {
             exit($e->getMessage());
